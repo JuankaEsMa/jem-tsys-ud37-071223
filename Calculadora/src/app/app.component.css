@@ -1,0 +1,49 @@
+#containerCalculadora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4DB7AD;
+}
+.container{
+    max-width: 300px;
+    box-shadow: 0 0 3px black;
+    user-select: none; 
+}
+#containerInputs{
+    display: flex;
+    box-shadow: inset;
+}
+#inputCalculadora{
+    height: 50px;
+}
+#resultadoApartado{
+    height: 50px;   
+    color: rgba(0, 0, 0, 0.425);
+}
+input:disabled{
+    background-color: white;
+}
+.row>div{
+    width: 50x;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+div>.col-3:nth-child(-n+3){
+    background-color: grey;
+    height: 50px;
+    width: 50x;
+}
+div>.col-3{
+    background-color: #4DB7AD;
+}
+input{
+    border: 0px;
+    outline: none;
+    text-align: right;
+}

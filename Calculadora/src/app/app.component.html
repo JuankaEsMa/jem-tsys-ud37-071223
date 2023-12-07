@@ -1,0 +1,38 @@
+<div id="containerCalculadora">
+  <div class="container">
+    <div id="containerInputs" class="row">
+      <input id="inputCalculadora" type="text" disabled value="{{operacion}}"/>
+      <input id="resultadoApartado" type="text" disabled value="{{resultado}}"/>
+    </div>
+    <div class="row">
+      <div class="col-3 signo" (click)="onClickSign($event)">%</div>
+      <div class="col-3" (click)="eraseAll()">CE</div>
+      <div class="col-3" (click)="eraseAll()">C</div>
+      <div class="col-3" (click)="eraseOneDigit()"><i class="fa-solid fa-delete-left"></i></div>
+    </div>
+    <div class="row">
+      <div class="col-3 num" (click)="onClickNum($event)">7</div>
+      <div class="col-3 num" (click)="onClickNum($event)">8</div>
+      <div class="col-3 num" (click)="onClickNum($event)">9</div>
+      <div class="col-3 " (click)="onClickSign($event)">*</div>
+    </div>
+    <div class="row">
+      <div class="col-3 num" (click)="onClickNum($event)">4</div>
+      <div class="col-3 num" (click)="onClickNum($event)">5</div>
+      <div class="col-3 num" (click)="onClickNum($event)">6</div>
+      <div class="col-3 signo" (click)="onClickSign($event)">-</div>
+    </div>
+    <div class="row">
+      <div class="col-3 num" (click)="onClickNum($event)">1</div>
+      <div class="col-3 num" (click)="onClickNum($event)">2</div>
+      <div class="col-3 num" (click)="onClickNum($event)">3</div>
+      <div class="col-3 signo" (click)="onClickSign($event)">+</div>
+    </div>
+    <div class="row">
+      <div class="col-3" (click)="cambiarSigno()">+/-</div>
+      <div class="col-3 num" (click)="onClickNum($event)">0</div>
+      <div class="col-3 num" (click)="onClickNum($event)">,</div>
+      <div id="equalButton" class="col-3" (click)="onClickEqual()">=</div>
+    </div>
+  </div>
+</div>
